@@ -20,4 +20,4 @@ async def websocket_endpoint(websocket: WebSocket, client_id: int) -> None:
     await start_chat(websocket=websocket, client_id=client_id)
 
 if __name__ == '__main__':
-    uvicorn.run("main:app", log_level="info")
+    uvicorn.run("main:app", log_level="info", use_colors=True)
